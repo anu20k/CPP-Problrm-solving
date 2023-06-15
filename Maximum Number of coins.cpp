@@ -3,8 +3,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-//User function Template for C++
 class Solution{
     public:
        int memo(int i,int j,vector<int>&a,vector<vector<int>>&dp)
@@ -30,7 +28,7 @@ class Solution{
                  a.insert(a.begin(),1);
             a.push_back(1);
             vector<vector<int>> dp(N+1,vector<int>(N+1,-1));
-            // return rec(1,N,a);
+            
             return memo(1,N,a,dp);
         }
 };
