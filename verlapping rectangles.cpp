@@ -1,25 +1,21 @@
-//{ Driver Code Starts
-// Initial Template for C++
+
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-// User function Template for C++
+
 
 class Solution {
   public:
     int doOverlap(int L1[], int R1[], int L2[], int R2[]) {
-        // code here
         
-        //for x axis
         int low_x1 = min(L1[0],R1[0]);
         int high_x1 = max(L1[0],R1[0]);
         
         int low_x2 = min(L2[0],R2[0]);
         int high_x2 = max(L2[0],R2[0]);
         
-        //y axis
+      
         int low_y1 = min(L1[1],R1[1]);
         int high_y1 = max(L1[1],R1[1]);
         
